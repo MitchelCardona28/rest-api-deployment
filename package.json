@@ -1,0 +1,24 @@
+{
+  "name": "api-rest-deployment",
+  "version": "1.0.0",
+  "description": "A Node.js hand-on course",
+  "main": "1-sys-info.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "keywords": [],
+  "author": "Brandon Mitchel Arboleda Cardona [michelito428@gmail.com]",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "^4.18.2",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}

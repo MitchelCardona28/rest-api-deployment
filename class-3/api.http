@@ -1,0 +1,33 @@
+### Get movies
+GET http://localhost:1234/movies
+
+### Get movies by id
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Get movies by genre
+GET http://localhost:1234/movies?genre=sci-fi
+
+### Create a new movie item
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "Los Pepes",
+  "year": 1994,
+  "director": "Mitchel Cardona",
+  "duration": 150,
+  "genre" : [
+    "Adventure",
+    "Fantasy"
+  ],
+  "rate": 9.3,
+  "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp"
+}
+
+### Update a movie
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 1990
+}
