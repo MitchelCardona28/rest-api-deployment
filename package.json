@@ -1,9 +1,11 @@
 {
-  "name": "api-rest-deployment",
+  "name": "rest-api-deployment",
   "version": "1.0.0",
   "description": "A Node.js hand-on course",
   "main": "1-sys-info.js",
   "scripts": {
+    "build": "BP_NODE_VERSION=20.10.0",
+    "start": "node class-3/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
