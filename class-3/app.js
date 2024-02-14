@@ -104,17 +104,6 @@ app.patch('/movies/:id', (req, res) => {
   return res.json(updateMovie)
 })
 
-// Handleling CORS error
-/* app.options('/movies/:id', (req, res) => {
-  const origin = req.header('origin')
-
-  if (ACCEPTED_ORIGINS.includes(origin) || !origin) {
-    res.header('Access-Control-Allow-Origin', origin)
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE')
-    res.send(200)
-  }
-}) */
-
 const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
